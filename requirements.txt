@@ -1,0 +1,30 @@
+# Core Dashboard
+dash==2.14.1
+dash-bootstrap-components==1.4.2
+plotly==5.17.0
+pandas==2.0.3
+numpy==1.24.3
+flask==2.3.2
+
+# Database & ORM
+sqlalchemy==2.0.20
+psycopg2-binary==2.9.7
+pymysql==1.1.0
+cryptography==41.0.4
+alembic==1.12.1
+
+# Authentication & Security
+flask-sqlalchemy==3.0.5
+flask-login==0.6.2
+werkzeug==2.3.7
+python-dotenv==1.0.0
+
+# Data Processing
+openpyxl==3.1.2
+python-dateutil==2.8.2
+
+# LLM Integration
+requests==2.31.0
+
+# Utils
+gunicorn==21.2.0
