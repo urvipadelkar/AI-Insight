@@ -1,0 +1,116 @@
+{
+  "name": "Car Data",
+  "saved_at": "2026-04-20T12:53:29.244705",
+  "kpi_selections": [
+    {
+      "column": "Car Purchase Amount",
+      "aggregation": "sum",
+      "label": "Sum of Car Purchase Amount"
+    },
+    {
+      "column": "Annual Salary",
+      "aggregation": "sum",
+      "label": "Sum of Annual Salary"
+    },
+    {
+      "column": "Credit Card Debt",
+      "aggregation": "sum",
+      "label": "Sum of Credit Card Debt"
+    }
+  ],
+  "filter_selections": [
+    {
+      "column": "Country",
+      "filter_type": "dropdown",
+      "label": "Country"
+    }
+  ],
+  "confirmed_dtypes": {
+    "Age": "numeric",
+    "Annual Salary": "numeric",
+    "Car Purchase Amount": "numeric",
+    "Country": "categorical",
+    "Credit Card Debt": "numeric",
+    "Customer Name": "categorical",
+    "Customer e-mail": "categorical",
+    "Gender": "numeric",
+    "Net Worth": "numeric"
+  },
+  "ai_suggestions": {
+    "charts": [
+      {
+        "type": "bar",
+        "x": "Country",
+        "y": "Car Purchase Amount",
+        "title": "Top Countries by Car Purchases",
+        "rationale": "Identify regions with the highest concentration of car sales."
+      },
+      {
+        "type": "histogram",
+        "x": "Age",
+        "y": null,
+        "title": "Customer Age Distribution",
+        "rationale": "Understand the age demographic to tailor marketing strategies."
+      },
+      {
+        "type": "scatter",
+        "x": "Annual Salary",
+        "y": "Car Purchase Amount",
+        "title": "Income vs. Car Purchase Amount",
+        "rationale": "Analyze the relationship between income and car purchasing behavior."
+      },
+      {
+        "type": "box",
+        "x": "Gender",
+        "y": "Net Worth",
+        "title": "Net Worth Distribution by Gender",
+        "rationale": "Identify gender disparities in net worth, which could inform targeted marketing strategies."
+      },
+      {
+        "type": "treemap",
+        "x": "Country",
+        "y": "Car Purchase Amount",
+        "title": "Car Purchase Concentration by Country",
+        "rationale": "Visualize the concentration of car purchases to identify high-potential markets."
+      }
+    ],
+    "kpis": [
+      {
+        "column": "Car Purchase Amount",
+        "aggregation": "sum",
+        "label": "Total Car Sales Revenue",
+        "rationale": "This metric drives financial planning and identifies revenue streams."
+      },
+      {
+        "column": "Annual Salary",
+        "aggregation": "mean",
+        "label": "Average Customer Income",
+        "rationale": "Understanding average income helps in targeting the right customer segment for marketing campaigns."
+      },
+      {
+        "column": "Credit Card Debt",
+        "aggregation": "max",
+        "label": "Highest Credit Card Debt",
+        "rationale": "This highlights potential high-risk customers and opportunities for upselling financial products."
+      }
+    ],
+    "filters": [
+      {
+        "column": "Country",
+        "label": "Country",
+        "rationale": "Segment data by country to analyze regional trends."
+      },
+      {
+        "column": "Gender",
+        "label": "Gender",
+        "rationale": "Analyze differences between male and female customers for targeted marketing strategies."
+      },
+      {
+        "column": "Age",
+        "label": "Age Group",
+        "rationale": "Categorize customers by age to tailor marketing messages and offerings."
+      }
+    ],
+    "narrative": "The data reveals a concentrated customer base in specific countries, with high-income individuals playing a significant role in car purchases. Leadership should focus on expanding market share in these key regions while leveraging insights into the preferences of this demographic segment."
+  }
+}
