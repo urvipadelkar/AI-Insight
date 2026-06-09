@@ -1,0 +1,58 @@
+@media print {
+  /* Hide navigation and interactive elements */
+  .navbar, nav, .sidebar,
+  #btn-refresh-analysis,
+  #btn-download-pdf,
+  a[href="/config"],
+  .dcc-link,
+  .Select-control,
+  .dash-dropdown,
+  button,
+  .rc-slider,
+  .modebar,
+  [data-dash-is-loading] { display: none !important; }
+
+  /* Remove background colors that don't print well */
+  body { background: white !important; }
+
+  /* Full-width layout */
+  .container, .container-fluid, [style*="maxWidth"] {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 8px !important;
+  }
+
+  /* Charts: ensure full width and visible */
+  .js-plotly-plot, .plotly, .plot-container {
+    width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* Card sections */
+  [style*="borderRadius"] {
+    page-break-inside: avoid;
+    margin-bottom: 12px !important;
+  }
+
+  /* KPI cards — show inline for print */
+  [id="kpi-cards-container"] > div {
+    display: inline-block !important;
+  }
+
+  /* Page breaks between major sections */
+  [id="charts-container"] {
+    page-break-before: always;
+  }
+
+  /* Ensure chart grid prints full-width */
+  [style*="repeat(3, 1fr)"], [style*="grid-template-columns"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Footer */
+  @page {
+    margin: 1cm;
+    size: A4 landscape;
+  }
+}
